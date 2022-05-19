@@ -1,0 +1,82 @@
+<!doctype html>
+	<html>
+	<head><title> Formulaire de contact</title>
+	<link rel= "stylesheet"href="feuilledestyle.css">
+	</head>
+	
+	<body>
+	
+	<ul id="nav">
+	<li><a href = "index.html">Accueil</a></li>
+	<li><a href=" presentation_CV.html">Présentation Cv </a></li>
+     <li><a href=" contact.html"> Contact</a></li>
+	</ul>
+	
+	<b><h3>Formulaire de contact</h3></b>
+	<form action="#"><!--créer un formulaire-->
+	<em><p>Complétez le formulaire.Le champs marqué par <span class="surlignerouge">*</span> sont <span class="surlignerouge">obligatoire.</span></p></em>
+	
+	<fieldset>
+	<legend>Contact </legend>
+	<div>
+	<label for="madame"><input id="madame" type="radio" name="madame" value="madame">Madame</label>
+	<label for="monsieur"><input id="monsieur" type="radio" name="monsieur" value="monsieur">Monsieur</label>
+	</div>
+	      <br>
+		  
+	<label for="nom">Nom<span class="surlignerouge">*</span></label>
+	<!--placeholder:indication grisée//required:il faut renseigner le champs sinon la validation est bloquée//autofocus:le curseur est positionné dasn cette case au chargement de la page-->
+	<input id="nom" placeholder="nom" autofocus="" required=""></br>
+	<label for="prenom">Prenom<span class="surlignerouge">*</span></label>
+	<input id="prenom" placeholder="prenom" autofocus="" required=""></br>
+	<label for="telephone">portable</label>
+	<input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern=" 06[0-9]{8}"></br>
+	<label for="email">email<span class="surlignerouge">*</span></label>
+	<input id="email" type="email" placeholder="prenom.nom@gmail.com" required="" pattern="[a-zA-Z]*@gmail.com">
+	
+	</fieldset>
+	
+	<fieldset>
+	<legend> Information personnelles</legend>
+	<label for="age">age<span class="surlignerouge">*</span></label>
+	<input id="age" type="number" placeholder="" pattern="[0-9]{2}" required=""></br>
+	<label for="sexe">sexe</label>
+	<select id="sexe">
+	
+	<option value="F" name="sexe">Femme</option>
+	 <option value="H" name="sexe"> Homme</option>
+	 </select><br>
+	
+	<label for="comments">Pourquoi voulez-vous nous rejoindre?</label>
+	<textarea id="comments"></textarea>
+	</fieldset>
+	
+	<fieldset> 
+	
+	<legend> Choisissez vos binets favoris</legend>
+	<label for="Ice Tea "><input id="Ice Tea" type="checkbox" name="binet" value="Ice-tea">Ice Tea </label>
+	<label for="Coca-Cola"><input id="Coca-Cola" type="checkbox" name="binet" value="Coca-Cola">Coca-Cola</label>
+	<label for="Sprite"><input id="Sprite" type="checkbox" name="binet" value="Sprite">Sprite</label>
+	<label for="Fanta"><input id="Fanta" type="checkbox" name="binet" value="Fanta">Fanta</label>
+	<label for="Orangina"><input id="Orangina" type="checkbox" name="binet" value="Orangina">Orangina</label>
+	<label for="eau petillante"><input id="eau petillante" type="checkbox" name="binet" value="eau petillante">eau petillante</label>
+	<label for="Oasis"><input id="Oasis" type="checkbox" name="binet" value="Oasis">Oasis</label>
+	<label for="RedBull"><input id="RedBull" type="checkbox" name="binet" value="RedBull">RedBull</label>
+	<label for="Mojito"><input id="Mojito" type="checkbox" name="binet" value="Mojito">Mojito</label>
+	<label for="Pina Colada"><input id="Pina Colada" type="checkbox" name="binet" value="Pina Colada">Pina Colada </label>
+	<label for="Montain Dew"><input id="Montain Dew" type="checkbox" name="binet" value="Montain Dew">Montain Dew </label>
+	
+
+    </fieldset>
+	
+	<p><input type="submit" value="envoyer"></p>
+	
+	</form>
+	
+	
+	
+	
+	</body>
+	
+	</html>
+	
